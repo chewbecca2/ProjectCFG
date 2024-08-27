@@ -603,25 +603,45 @@ button:hover {
 
 
 @media (max-width: 576px) {
-    .navbar ul {
+    .navbar {
         display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px;
+    }
+
+    .navbar .container1 {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-    }
-
-    .hero-text h2 {
-        font-size: 1.5rem; 
-    }
-
-    .part2 .container .row .col-sm-3 {
-        flex: 0 0 100%; 
-        max-width: 100%;
-    }
-
-    .resize-image {
         width: 100%; 
+    }
+
+    .navbar ul {
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+        width: 100%; 
+    }
+
+    .navbar ul li {
+        width: 100%; 
+        text-align: center; 
+        margin: 5px 0; 
+    }
+
+    .navbar ul li a {
+        display: block; 
+        padding: 10px;
+        font-size: 1rem; 
+        text-decoration: none; 
+        color: #333; 
+    }
+
+    .navbar .logopic img {
+        width: 80px; 
         height: auto;
     }
-
 
 
 
